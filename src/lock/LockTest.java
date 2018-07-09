@@ -1,5 +1,6 @@
 package lock;
 
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -12,17 +13,21 @@ public class LockTest {
 
     public static void main(String[] args) {
         Ticket ticket = new Ticket();
-        for (int i=0 ; i<3;i ++) {
-            new Thread(ticket).start();
-        }
+        Thread thread1 = new Thread(ticket, "线程1");
+        thread1.setPriority(10);
+        Thread thread2 = new Thread(ticket, "线程2");
+        thread2.setPriority(1);
+        thread1.start();
+        thread2.start();
     }
 }
 
 class Ticket implements Runnable{
 
-    private int ticket = 100;
+    private int ticket = 10000;
 
     private Lock lock = new ReentrantLock();
+    Condition condition = lock.newCondition();
 
     @Override
     public void run() {
@@ -31,7 +36,6 @@ class Ticket implements Runnable{
         try {
             while (ticket > 0) {
                 System.out.println(Thread.currentThread().getName() + "完成售票，余票为：" + --ticket);
-                Thread.sleep(200);
             }
         } catch (Exception e) {
 
