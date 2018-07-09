@@ -13,7 +13,7 @@ import sun.security.provider.SHA;
  * @author 夸克
  * @create 2018/7/8 22:35
  */
-public class ProviderAndConsumer {
+public class ProviderAndConsumerBySynchronized {
 
     public static void  main(String[] args) {
 
