@@ -25,3 +25,7 @@
 
 ### volatiletest package:
 1. 对volatile保证内存可见性做了Demo。
+
+
+
+## 写的不好的地方希望指正
