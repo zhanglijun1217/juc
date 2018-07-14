@@ -19,6 +19,7 @@
 ### lock package:
 1. 使用lock去解决线程安全问题
 2. 经典的消费者生产者问题，应用三种方式。（wait/notify、await/signal、阻塞队列） 
+3. 线程八锁问题
 
 ### newthread package:
 1. 创建线程的几种方式 主流的线程池、继承Thread、实现Runnable接口、实现Callable接口等
