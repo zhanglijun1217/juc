@@ -1,4 +1,4 @@
-package ThreadPool;
+package threadPool;
 
 import java.util.Random;
 import java.util.concurrent.Executors;

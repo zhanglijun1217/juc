@@ -17,6 +17,7 @@ public class NewThread7 {
 
     public static int add(List<Integer> values) {
         values.parallelStream().forEach(System.out :: println);
+        values.parallelStream().forEachOrdered(System.out::println);// 并行打印数组是乱序的，这个方法是有序的foreach迭代
         return values.parallelStream().mapToInt(i -> i*2).sum();
     }
 

@@ -32,9 +32,13 @@
 1. 读写锁 注意读/锁线程，锁/锁线程应该互斥。而读/读线程可以共享
 
 
-### ThreadPool package:
+### threadPool package:
 1. 线程池简单应用
 2. 线程调度（应用 scheduledThreedPool）
+
+### threadLocal package:
+1. ThreadLocal的一个工具类
+2. [个人总结的ThreadLocal](https://zhanglijun1217.github.io/blog/2018/08/16/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E2%80%94%E2%80%94ThreadLocal%E6%80%BB%E7%BB%93/)
 
 
 
