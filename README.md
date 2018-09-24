@@ -40,7 +40,8 @@
 1. ThreadLocal的一个工具类
 2. [个人总结的ThreadLocal](https://zhanglijun1217.github.io/blog/2018/08/16/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E2%80%94%E2%80%94ThreadLocal%E6%80%BB%E7%BB%93/)
 
-
+### semaphore package:
+1. 利用Semaphore实现的一个有边界的容器。这里是利用了其中的许可来实现最大的边界，来源于《java并发编程实战》。
 
 
 ## 写的不好的地方希望指正
