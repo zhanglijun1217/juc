@@ -35,6 +35,8 @@
 ### threadPool package:
 1. 线程池简单应用
 2. 线程调度（应用 scheduledThreedPool）
+3. ThreadPoolExecutor源码分析系列：
+    （1）[ctl变量](https://zhanglijun1217.github.io/blog/2018/10/04/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E2%80%94%E2%80%94ThreadPoolExecutor%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%EF%BC%88%E4%B8%80%EF%BC%89/)
 
 ### threadLocal package:
 1. ThreadLocal的一个工具类
