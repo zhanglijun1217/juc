@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3693388c-3fa4-4315-8ef0-c31d11dc5bd6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/threadPool/ThreadPoolExecutorRejectNewTaskDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/threadPool/ThreadPoolExecutorRejectNewTaskDemo.java" afterDir="false" />
-    </list>
+    <list default="true" id="3693388c-3fa4-4315-8ef0-c31d11dc5bd6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +27,7 @@
       <file leaf-file-name="ThreadPoolExecutorRejectNewTaskDemo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/threadPool/ThreadPoolExecutorRejectNewTaskDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="112">
               <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -393,12 +391,12 @@
       <workItem from="1536511990933" duration="634000" />
       <workItem from="1537798263591" duration="2299000" />
       <workItem from="1538750922837" duration="238000" />
-      <workItem from="1538751285211" duration="2172000" />
+      <workItem from="1538751285211" duration="2334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67281000" />
+    <option name="totallyTimeSpent" value="67443000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,7 +409,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32893" />
@@ -834,7 +831,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/threadPool/ThreadPoolExecutorRejectNewTaskDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
+        <state relative-caret-position="112">
           <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
