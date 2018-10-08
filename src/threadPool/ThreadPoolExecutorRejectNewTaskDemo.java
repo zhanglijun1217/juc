@@ -22,6 +22,10 @@ public class ThreadPoolExecutorRejectNewTaskDemo {
     private static final ThreadPoolExecutor threadPool = new ThreadPoolExecutor(MAX_POOL_SIZE, MAX_POOL_SIZE, KEEP_ALIVE_TIME,
             TimeUnit.SECONDS, new LinkedBlockingDeque<>(QUEUE_CAPACITY), new MyThreadFactory());
 
+
+    /**
+     * 自定义线程工厂类
+     */
     private static class MyThreadFactory implements ThreadFactory {
         static int threadNumber = 0;
 
@@ -33,6 +37,9 @@ public class ThreadPoolExecutorRejectNewTaskDemo {
         }
     }
 
+    /**
+     * 向线程池提交的任务
+     */
     private static class MyRunnable implements Runnable {
         @Override
         public void run() {
