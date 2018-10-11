@@ -31,7 +31,7 @@ public class ThreadPoolExecutorRejectNewTaskDemo {
      */
     private static final int KEEP_ALIVE_TIME = 1;
     /**
-     * 线程池对象
+     * 线程池对象 注意这里传入的是默认的拒绝策略 也就是AbortPolicy
      */
     private static final ThreadPoolExecutor threadPool = new ThreadPoolExecutor(MAX_POOL_SIZE, MAX_POOL_SIZE, KEEP_ALIVE_TIME,
             TimeUnit.SECONDS, new LinkedBlockingDeque<>(QUEUE_CAPACITY), new MyThreadFactory("task-reject"));
