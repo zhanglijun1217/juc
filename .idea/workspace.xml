@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3693388c-3fa4-4315-8ef0-c31d11dc5bd6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/countdownlatch/HttpClientOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/countdownlatch/HttpClientOp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/countdownlatch/SimulateConcurrentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/countdownlatch/SimulateConcurrentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/threadPool/ThreadPoolExecutorRejectNewTaskDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/threadPool/ThreadPoolExecutorRejectNewTaskDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,13 +26,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadPoolExecutorRejectNewTaskDemo.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ThreadPoolExecutorRejectNewTaskDemo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/threadPool/ThreadPoolExecutorRejectNewTaskDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="494">
+              <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
+                <element signature="e#1179#1180#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1387#1388#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="597" column="11" selection-start-line="597" selection-start-column="11" selection-end-line="597" selection-end-column="11" />
+              <folding>
+                <element signature="e#21475#21476#0" expanded="true" />
+                <element signature="e#21519#21520#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimulateConcurrentRequest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimulateConcurrentRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/countdownlatch/SimulateConcurrentRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="136">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,20 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewScheduledThreadPoolTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/threadPool/NewScheduledThreadPoolTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ThreadPoolExecutor.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21216">
-              <caret line="1308" column="65" selection-start-line="1308" selection-start-column="65" selection-end-line="1308" selection-end-column="65" />
+            <state relative-caret-position="-20">
+              <caret line="322" column="13" selection-start-line="322" selection-start-column="13" selection-end-line="322" selection-end-column="13" />
               <folding>
                 <element signature="e#25302#25303#0" expanded="true" />
                 <element signature="e#25341#25342#0" expanded="true" />
@@ -178,9 +184,9 @@
         <option value="$PROJECT_DIR$/src/semaphore/BoundedHashSet.java" />
         <option value="$PROJECT_DIR$/src/semaphore/BoundedHashSetTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/threadPool/ThreadPoolExecutorRejectNewTaskDemo.java" />
         <option value="$PROJECT_DIR$/src/countdownlatch/HttpClientOp.java" />
         <option value="$PROJECT_DIR$/src/countdownlatch/SimulateConcurrentRequest.java" />
+        <option value="$PROJECT_DIR$/src/threadPool/ThreadPoolExecutorRejectNewTaskDemo.java" />
       </list>
     </option>
   </component>
@@ -264,7 +270,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SimulateConcurrentRequest">
+  <component name="RunManager" selected="Application.ThreadPoolExecutorRejectNewTaskDemo">
     <configuration name="BoundedHashSetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="semaphore.BoundedHashSetTest" />
       <module name="juc" />
@@ -272,17 +278,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="semaphore.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="NewScheduledThreadPoolTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadPool.NewScheduledThreadPoolTest" />
-      <module name="juc" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="threadPool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -316,6 +311,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="countdownlatch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="ThreadPoolExecutorRejectNewTaskDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="threadPool.ThreadPoolExecutorRejectNewTaskDemo" />
+      <module name="juc" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="threadPool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -363,18 +369,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.NewThread7" />
-      <item itemvalue="Application.NewScheduledThreadPoolTest" />
       <item itemvalue="Application.OomMain" />
       <item itemvalue="Application.BoundedHashSetTest" />
       <item itemvalue="Application.SimulateConcurrentRequest" />
+      <item itemvalue="Application.ThreadPoolExecutorRejectNewTaskDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadPoolExecutorRejectNewTaskDemo" />
         <item itemvalue="Application.SimulateConcurrentRequest" />
         <item itemvalue="Application.BoundedHashSetTest" />
         <item itemvalue="Application.OomMain" />
         <item itemvalue="Application.NewThread7" />
-        <item itemvalue="Application.NewScheduledThreadPoolTest" />
       </list>
     </recent_temporary>
   </component>
@@ -409,12 +415,12 @@
       <workItem from="1538751285211" duration="4385000" />
       <workItem from="1539223347612" duration="2368000" />
       <workItem from="1539227591319" duration="821000" />
-      <workItem from="1539262335431" duration="3149000" />
+      <workItem from="1539262335431" duration="5993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75832000" />
+    <option name="totallyTimeSpent" value="78676000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,7 +470,7 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32793018" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2729124" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16957606" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21888413" />
@@ -510,13 +516,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/volatiletest/VolatileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/concurrent/CountDownLatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -808,31 +807,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21216">
-          <caret line="1308" column="65" selection-start-line="1308" selection-start-column="65" selection-end-line="1308" selection-end-column="65" />
-          <folding>
-            <element signature="e#25302#25303#0" expanded="true" />
-            <element signature="e#25341#25342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/concurrent/LinkedBlockingDeque.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
           <caret line="179" column="11" selection-start-line="179" selection-start-column="11" selection-end-line="179" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/threadPool/ThreadPoolExecutorRejectNewTaskDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -876,10 +854,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/countdownlatch/SimulateConcurrentRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="136">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="597" column="11" selection-start-line="597" selection-start-column="11" selection-end-line="597" selection-end-column="11" />
+          <folding>
+            <element signature="e#21475#21476#0" expanded="true" />
+            <element signature="e#21519#21520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="322" column="13" selection-start-line="322" selection-start-column="13" selection-end-line="322" selection-end-column="13" />
+          <folding>
+            <element signature="e#25302#25303#0" expanded="true" />
+            <element signature="e#25341#25342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadPool/ThreadPoolExecutorRejectNewTaskDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1179#1180#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
           </folding>
         </state>
       </provider>
