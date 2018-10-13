@@ -1,10 +1,8 @@
 package threadPool;
 
 import java.util.HashMap;
-import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.Map;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -87,7 +85,7 @@ public class ThreadPoolExecutorRejectNewTaskDemo {
         /**
          * namePrefix --> 线程名字中的计数
          */
-        private static HashMap<String, AtomicInteger> THREAD_ID_TABLE = new HashMap<>();
+        private static Map<String, AtomicInteger> THREAD_ID_TABLE = new ConcurrentHashMap<>();
         /**
          * 线程名称前缀
          */
@@ -108,17 +106,18 @@ public class ThreadPoolExecutorRejectNewTaskDemo {
 
         @Override
         public Thread newThread(Runnable r) {
-            String threadName = namePrefix + "-" +generateThreadId(this.namePrefix);
+            String threadName = namePrefix + "-" + generateThreadId(this.namePrefix);
             Thread thread = new Thread(r, threadName);
             thread.setDaemon(this.isDamon);
             System.out.println("创建线程" + threadName);
             return thread;
         }
 
-        private static synchronized int generateThreadId(String namePrefix) {
+        private static int generateThreadId(String namePrefix) {
 
+            // 判断后执行 concurrentHashMap不能保证完全线程安全 用了putIfAbsent
             if (!THREAD_ID_TABLE.containsKey(namePrefix)) {
-                THREAD_ID_TABLE.put(namePrefix, new AtomicInteger(0));
+                THREAD_ID_TABLE.putIfAbsent(namePrefix, new AtomicInteger(0));
             }
             return THREAD_ID_TABLE.get(namePrefix).getAndIncrement();
         }
