@@ -49,13 +49,13 @@ public class ThreadPoolExecutorRejectNewTaskDemo {
             System.out.println("提交任务 " + i);
             threadPool.submit(runnable);
         }
-        // 在线程池未满的情况下关闭线程池
-        threadPool.shutdown();
-        if (threadPool.isShutdown()) {
-            System.out.println("提交任务" + MAX_POOL_SIZE);
-            // 在线程池未满 但却关闭的情况下去提交任务 此时会拒绝
-            threadPool.submit(runnable);
-        }
+//        // 在线程池未满的情况下关闭线程池
+//        threadPool.shutdown();
+//        if (threadPool.isShutdown()) {
+//            System.out.println("提交任务" + MAX_POOL_SIZE);
+//            // 在线程池未满 但却关闭的情况下去提交任务 此时会拒绝
+//            threadPool.submit(runnable);
+//        }
     }
 
     /**
@@ -70,10 +70,10 @@ public class ThreadPoolExecutorRejectNewTaskDemo {
             threadPool.submit(myRunnable);
         }
 
-        // 此时再去往其中添加 任务
-        if (threadPool.getActiveCount() == MAX_POOL_SIZE && threadPool.getQueue().size() == QUEUE_CAPACITY) {
-            threadPool.submit(myRunnable);
-        }
+//        // 此时再去往其中添加 任务
+//        if (threadPool.getActiveCount() == MAX_POOL_SIZE && threadPool.getQueue().size() == QUEUE_CAPACITY) {
+//            threadPool.submit(myRunnable);
+//        }
     }
 
 
@@ -94,7 +94,7 @@ public class ThreadPoolExecutorRejectNewTaskDemo {
          */
         private boolean isDamon;
         public MyThreadFactory(String namePrefix) {
-            this(namePrefix, true);
+            this(namePrefix, false);
         }
 
         public MyThreadFactory(String namePrefix, boolean isDamon) {
@@ -114,7 +114,6 @@ public class ThreadPoolExecutorRejectNewTaskDemo {
 
         private static int generateThreadId(String namePrefix) {
 
-            // 判断后执行 concurrentHashMap不能保证完全线程安全 用了putIfAbsent
             if (!THREAD_ID_TABLE.containsKey(namePrefix)) {
                 THREAD_ID_TABLE.putIfAbsent(namePrefix, new AtomicInteger(0));
             }
