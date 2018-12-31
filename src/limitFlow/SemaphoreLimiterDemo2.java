@@ -1,6 +1,7 @@
 package limitFlow;
 
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -40,10 +41,8 @@ class SemaphoreLimiterRunnable extends Thread{
             // 获取一个许可
             semaphore.acquire();
 
-            long endTime = (long) Math.random() * 10;
-
             System.out.println("线程：" + Thread.currentThread().getName() + "要吃饭了");
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(5);
             System.out.println("线程：" + Thread.currentThread().getName() + "已经吃完了");
 
             // 释放许可
