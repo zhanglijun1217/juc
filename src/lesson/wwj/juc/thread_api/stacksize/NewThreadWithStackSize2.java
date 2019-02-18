@@ -27,7 +27,7 @@ public class NewThreadWithStackSize2 {
                 count ++;
                 add(i+1);
             }
-        }, "test-stackSize", 1<<23); // 1 右移23位 大概是8mb 给当前线程thread分配了8m的stackSize 进行递归栈溢出
+        }, "test-stackSize", 1<<23); // 1 左移23位 大概是8mb 给当前线程thread分配了8m的stackSize 进行递归栈溢出
         // 这里的疑问？虚拟机栈是每个线程都独有的一份吗？
 
         thread.start();
