@@ -1,4 +1,4 @@
-package lesson.wwj.juc.deamon_thread;
+package lesson.wwj.juc.thread_api.deamon_thread;
 
 /**
  * @author 夸克
