@@ -22,10 +22,14 @@ public class ThreadInterrupt {
             while (true) {
                 try {
                     Thread.sleep(100);// 阻塞状态 清除中断标志位 抛出异常
-                } catch (Exception e) {
+                } catch (InterruptedException e) {
                     System.out.println("收到打断信号");
                     // 这里就是外边的interrupt方法打断了这里的sleep
                     e.printStackTrace();
+
+                    // 正确的处理InterruptException的一种方式
+                    // 因为发生了InterruptEx 所以当前线程的中断标志位已经被清除 恢复被中断标记 方便其他需要判断当前中断状态的地方调用
+                    Thread.currentThread().interrupt();// 通过这个回复线程的中断标志位，给下面的操作处理
                 }
                 System.out.println(">>" + Thread.currentThread().getName() + ".." + Thread.interrupted());
             }

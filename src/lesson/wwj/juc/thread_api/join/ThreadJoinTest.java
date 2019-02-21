@@ -37,9 +37,14 @@ public class ThreadJoinTest {
         }
 
         System.out.println("==================t1 和 t2执行完毕================");
-        // main线程 这样没有join方法两个线程随机打印
         IntStream.range(1, 1000).forEach(i -> System.out.println(Thread.currentThread().getName() + "--" + i));
 
-        // 如果这里调用 Thread.currentThread.join 则会出现程序无法关闭的问题。
+        // 如果这里调用 Thread.currentThread.join 则会出现程序无法关闭的问题。 main线程自己join了自己的情况
+//        try {
+//
+//            Thread.currentThread().join();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 }
