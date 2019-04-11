@@ -27,5 +27,6 @@ public class ThreadSimpleApi {
 
         // 优先级 只是一个概率 优先级高的不一定最先执行
         Optional.of(t.getPriority()).ifPresent(System.out::println);
+
     }
 }
