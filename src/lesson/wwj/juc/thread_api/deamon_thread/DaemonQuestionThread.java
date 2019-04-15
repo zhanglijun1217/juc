@@ -4,6 +4,8 @@ package lesson.wwj.juc.thread_api.deamon_thread;
  * 这里对后台线程提出一个问题：
  * （1）当在main函数中的一个Thread里再创建一个线程，设置为后台线程，那么外边线程结束之后 里面的线程是否也会退出？ 会的 这个就长连接中的健康检查
  *
+ * 内线程  外线程
+ *
  *
  * @author 夸克
  * @date 2019/2/19 00:21
