@@ -15,8 +15,8 @@ public class BoundedHashSetTest {
         } catch (Exception e) {
             if (e instanceof RuntimeException) {
                 System.out.println("容器已满" + e);
-                System.out.println("容器内数据" + set.toString());
-            } else if (e instanceof InterruptedException) {
+                System.out.println("容器内数据" + set);
+            } else {
                 System.out.println("线程被中断");
             }
         }
