@@ -24,7 +24,7 @@ public class LockTest {
 
 class Ticket implements Runnable{
 
-    private int ticket = 10000;
+    private int ticket = 100;
 
     private Lock lock = new ReentrantLock();
     Condition condition = lock.newCondition();
@@ -32,6 +32,7 @@ class Ticket implements Runnable{
     @Override
     public void run() {
 
+        // 这里只有一个线程能对票进行售卖
         lock.lock();// 上锁
         try {
             while (ticket > 0) {
@@ -41,6 +42,7 @@ class Ticket implements Runnable{
 
         } finally {
             lock.unlock();
+            System.out.println(Thread.currentThread().getName() + "解锁");
         }
     }
 }
